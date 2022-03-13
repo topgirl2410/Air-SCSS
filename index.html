@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air - BEM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
@@ -16,58 +19,51 @@
     <header class="header">
         <div class="barra contenedor">
             <div class="barra__logo">
-                <img class="barra__logo-img" src="/build/img/camping.svg" alt="logo">
+                <p class="barra__nombre">Savage</p>
             </div>
+
             <nav class="barra__navegacion">
-                <a href="#">Alojamientos</a>
-                <a href="#">Experiencias</a>
-                <a href="#">Experiencias en línea</a>
+                <a class="barra__link" href="#">Lugares para hospedarte</a>
+                <a class="barra__link" href="#">Experiencias</a>
+                <a class="barra__link" href="#">Experiencias en línea</a>
             </nav>
 
-            <nav class="barra_login">
-                <a href="#">Hazte anfitrión</a>
+            <nav class="barra__login">
+                <a class="barra__link" href="#">Hazte Anfitrión</a>
             </nav>
         </div>
 
-
         <form class="formulario contenedor">
             <div class="formulario__campo">
-                <label for="destino" class="formulario__label">
-                    Destino
-                </label>
-                <input type="text" class="formulario__input" id="destino" placeholder="Elige destino">
+                <label class="formulario__label" for="ubicacion">Ubicación</label>
+                <input type="text" class="formulario__input" id="ubicacion" placeholder="¿A donde viajas">
             </div>
 
             <div class="formulario__campo">
-                <label for="entrada" class="formulario__label">
-                    Entrada
-                </label>
-                <input type="date" class="formulario__input" id="entrada">
+                <label class="formulario__label" for="llegada">Llegada</label>
+                <input type="date" class="formulario__input" id="llegada">
             </div>
 
             <div class="formulario__campo">
-                <label for="salida" class="formulario__label">
-                    Salida
-                </label>
+                <label class="formulario__label" for="salida">Salida</label>
                 <input type="date" class="formulario__input" id="salida">
             </div>
 
             <div class="formulario__campo">
-                <label for="huespedes" class="formulario__label">
-                    Nº de Personas
-                </label>
+                <label class="formulario__label" for="huespedes">Huéspedes</label>
                 <input type="number" class="formulario__input" id="huespedes" placeholder="¿Cuántos?">
             </div>
 
             <div class="formulario__campo">
-                <input type="submit" class="formulario__input" value="Buscar">
+                <input type="submit" class="formulario__submit" value="Buscar">
             </div>
         </form>
 
         <div class="header__busqueda contenedor">
             <p class="header__busqueda-label">¿No sabes a donde ir?</p>
-            <a href="#" class="header__busqueda-boton">Busqueda Flexible</a>
+            <a href="#" class="header__busqueda-boton">Búsqueda Flexible</a>
         </div>
+
     </header>
 </body>
 

@@ -1,0 +1,32 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.barra {
+    display: none;
+
+    @include m.tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nombre {
+        font-size: 6rem;
+        font-family: "League Gothic", sans-serif;
+        color: bisque;
+    }
+    &__navegacion {
+        @include m.tablet {
+            display: flex;
+            gap: 4rem;
+        }
+    }
+    &__link {
+        color: v.$blanco;
+    }
+
+    &__nombre {
+        color: v.$blanco;
+        margin: 0;
+    }
+}

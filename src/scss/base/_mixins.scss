@@ -7,13 +7,13 @@
     }
 }
 
-@mixin telefono {
+@mixin tablet {
     @media (min-width: v.$tablet) {
         @content;
     }
 }
 
-@mixin telefono {
+@mixin desktop {
     @media (min-width: v.$desktop) {
         @content;
     }
@@ -29,9 +29,6 @@
     font-weight: 700;
     display: block;
 
-    @include m.tablet { 
-        display: inline-block;
-    }
 }
 
 @mixin grid($columnas, $espaciado) {
