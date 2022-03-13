@@ -10,11 +10,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
-
 </head>
 
 <body>
+    <header class="header">
+        <div class="barra contenedor">
+            <div class="barra__logo">
+                <img class="barra__logo-img" src="/build/img/camping.svg" alt="logo">
+            </div>
+            <nav class="barra__navegacion">
+                <a href="#">Alojamientos</a>
+                <a href="#">Experiencias</a>
+                <a href="#">Experiencias en línea</a>
+            </nav>
 
+            <nav class="barra_login">
+                <a href="#">Hazte anfitrión</a>
+            </nav>
+        </div>
+
+
+        <form class="formulario contenedor">
+            <div class="formulario__campo">
+                <label for="destino" class="formulario__label">
+                    Destino
+                </label>
+                <input type="text" class="formulario__input" id="destino" placeholder="Elige destino">
+            </div>
+
+            <div class="formulario__campo">
+                <label for="entrada" class="formulario__label">
+                    Entrada
+                </label>
+                <input type="date" class="formulario__input" id="entrada">
+            </div>
+
+            <div class="formulario__campo">
+                <label for="salida" class="formulario__label">
+                    Salida
+                </label>
+                <input type="date" class="formulario__input" id="salida">
+            </div>
+
+            <div class="formulario__campo">
+                <label for="huespedes" class="formulario__label">
+                    Nº de Personas
+                </label>
+                <input type="number" class="formulario__input" id="huespedes" placeholder="¿Cuántos?">
+            </div>
+
+            <div class="formulario__campo">
+                <input type="submit" class="formulario__input" value="Buscar">
+            </div>
+        </form>
+
+        <div class="header__busqueda contenedor">
+            <p class="header__busqueda-label">¿No sabes a donde ir?</p>
+            <a href="#" class="header__busqueda-boton">Busqueda Flexible</a>
+        </div>
+    </header>
 </body>
 
 </html>
