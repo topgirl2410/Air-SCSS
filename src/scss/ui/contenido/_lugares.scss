@@ -8,7 +8,6 @@
         column-gap: 4rem;
         @include m.scrollHorizontal;
 
-
         @include m.tablet {
             @include m.grid(2, 2rem);
         }
@@ -19,4 +18,12 @@
     }
 }
 
+.lugar {
+    &__imagen {
+        border-radius: 1rem;
+    }
 
+    &__nombre {
+        font-size: 1.8rem;
+    }
+}
