@@ -17,15 +17,19 @@
     }
     &__navegacion {
         @include m.tablet {
+            font-size: 1.8rem;
             display: flex;
             gap: 4rem;
         }
     }
     &__link {
         color: v.$blanco;
+        font-size: 3rem;
+        font-family: "League Gothic", sans-serif;
     }
 
     &__nombre {
+        font-size: 8rem;
         color: v.$blanco;
         margin: 0;
     }
